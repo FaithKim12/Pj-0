@@ -70,3 +70,16 @@ hist(iris$Petal.Width [iris$Species == "virginica"],
 library(datasets)
 ?mtcars
 head(mtcars)
+
+#check univariate distributions using historgram
+hist(mtcars$wt)
+hist(mtcars$mpg)
+plot(mtcars$wt, mtcars$mpg) #plots both of them using scatterplots
+#add options
+plot(mtcars$wt, mtcars$mpg, 
+     pch=19,   #solid circle
+     cex=1.5,   #make 150% size
+     col="#cc0000",  #red
+     main="MPG as a Function of Weight and Cars", 
+     xlab="Weight (in 1000 Pounds)", 
+     ylab="MPG")
